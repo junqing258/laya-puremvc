@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "env",
+    "stage-0",
+    "flow"
+  ],
+  "env": {
+    "targets": {
+      "browsers": [
+        "last 2 versions",
+        "safari >= 7"
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "transform-async-to-module-method",
+      {
+        "module": "bluebird",
+        "method": "coroutine"
+      }
+    ],
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ]
+}
