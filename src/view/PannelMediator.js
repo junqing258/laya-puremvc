@@ -9,7 +9,6 @@ export default class PannelMediator extends puremvc.Mediator {
 
         setTimeout(()=> {
             this.roleProxy = this.facade.retrieveProxy('ROLE_PROXY');
-
             console.log(this.roleProxy);
         });
     }

@@ -7,7 +7,7 @@
 	},
 	"files":[
 		"libs/LayaAir.d.ts",
-		"libs/rx.d.ts"
+		"libs/puremvc-typescript-standard-1.0.d.ts"
 	],
 	"include": [
 		"src/**/*"
