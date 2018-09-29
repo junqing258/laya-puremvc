@@ -9,6 +9,7 @@
     },
     "globals": {
         "Laya": true,
+        "Promise": true,
         "laya": true,
         "puremvc": true
     },
