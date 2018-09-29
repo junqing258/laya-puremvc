@@ -3,7 +3,6 @@ const os = require('os');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
-const webpackDevServer = require('webpack-dev-server');
 const localServer = require('./server/index');
 
 
@@ -17,7 +16,7 @@ var plugins = [
     new WebpackNotifierPlugin()
 ];
 
-/**************************************************************************************************************************
+/** ************************************************************************************************************************
  **
  */
 module.exports = {
@@ -61,14 +60,14 @@ module.exports = {
     },
     devServer: {
         hot: false,
-        host: (function() {
-            let wlan = os.networkInterfaces()['WLAN'];
+        host: (function () {
+            let wlan = os.networkInterfaces().WLAN;
             // if (wlan) return wlan[1]['address'];
             // else return null;
-        })(),
+        }()),
         disableHostCheck: true,
         contentBase: "./bin/",
-        before: function(app) {
+        before: function (app) {
             localServer(app);
         }
     },

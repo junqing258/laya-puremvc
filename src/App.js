@@ -4,7 +4,7 @@ import ApplicationFacade from "facade/ApplicationFacade";
 const { Stage } = Laya;
 
 export default function App() {
-    var stage;
+    let stage;
     Laya.init(1334, 750, Laya.WebGL);
     stage = Laya.stage;
     stage.scaleMode = Stage.SCALE_FIXED_WIDTH;
