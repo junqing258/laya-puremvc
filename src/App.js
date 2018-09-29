@@ -11,5 +11,6 @@ export default function App() {
     stage.alignH = Stage.ALIGN_CENTER;
     stage.alignV = Stage.ALIGN_MIDDLE;
     stage.screenMode = Stage.SCREEN_HORIZONTAL;
+
     ApplicationFacade.getInstance().startup();
 }
